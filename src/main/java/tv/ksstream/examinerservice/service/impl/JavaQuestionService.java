@@ -24,13 +24,9 @@ public class JavaQuestionService implements QuestionService {
 
     @Override
     public Question add(Question question) {
-        return null;
+        return question;
     }
 
-    @Override
-    public Question remove(String question, String answer) {
-        return null;
-    }
 
     @Override
     public Question remove(Question question) {
@@ -39,7 +35,7 @@ public class JavaQuestionService implements QuestionService {
 
     @Override
     public Collection<Question> getAll() {
-        return null;
+        return questions.stream().toList();
     }
 
     @Override
