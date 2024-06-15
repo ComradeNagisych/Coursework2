@@ -40,4 +40,10 @@ public class JavaQuestionServiceTest {
         Assertions.assertEquals(2, questions.size());
         MatcherAssert.assertThat(questions, Matchers.containsInAnyOrder(question, question1));
     }
+    @Test
+    public void getRandomQuestion() {
+        Question question = service.add("Test question 5", "Test answer 5");
+        Question question1 = service.add("Test question 6", "Test answer 6");
+        Collection<Question> questions = (Collection<Question>) service.getRandomQuestion();
+    }
 }
