@@ -10,11 +10,7 @@ import java.util.Set;
 
 @Service
 public class JavaQuestionService implements QuestionService {
-    private final Set<Question> questions;
-
-    public JavaQuestionService(Set<Question> questions) {
-        this.questions = questions;
-    }
+    private Set<Question> questions;
 
     @Override
     public Question add(String question, String answer) {
